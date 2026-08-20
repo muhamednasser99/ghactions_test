@@ -1,0 +1,12 @@
+name: Scheduled Run
+
+on:
+  schedule:
+    - cron: '19 13 * * *'
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run
+        run: echo "Hello"
